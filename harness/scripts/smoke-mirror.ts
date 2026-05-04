@@ -28,7 +28,7 @@ import {
   mirrorRecordPath,
   pushMirror,
   syncMirror,
-} from "../src/mirror/index.js";
+} from "@devplusllc/harness-core";
 
 const projectName = `smoke_${Date.now()}`;
 let cleanupPaths: string[] = [];

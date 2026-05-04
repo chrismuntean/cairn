@@ -7,8 +7,8 @@
  * one citation. ~1 cheap haiku call. SKIPS without `claude`.
  */
 
-import { claudeIsAvailable } from "../src/claude/index.js";
-import { runQuestionAgent, type UatSummary } from "../src/uat/index.js";
+import { claudeIsAvailable } from "@devplusllc/harness-core";
+import { runQuestionAgent, type UatSummary } from "@devplusllc/harness-runtime";
 
 function header(line: string): void {
   console.log(`\n── ${line}`);

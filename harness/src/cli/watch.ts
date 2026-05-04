@@ -1,10 +1,6 @@
 import { resolve } from "node:path";
-import { logger } from "../logger.js";
-import {
-  normalizeProjectName,
-  readMirrorRecord,
-} from "../mirror/index.js";
-import { startDaemon } from "../watch/index.js";
+import { logger, normalizeProjectName, readMirrorRecord } from "@devplusllc/harness-core";
+import { startDaemon } from "@devplusllc/harness-runtime";
 
 const log = logger("cli.watch");
 

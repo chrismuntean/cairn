@@ -1,5 +1,5 @@
 import { resolve } from "node:path";
-import { runInit } from "../init/index.js";
+import { runInit } from "@devplusllc/harness-core";
 
 interface ParsedFlags {
   positional: string[];

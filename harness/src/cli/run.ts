@@ -2,15 +2,16 @@ import { config as loadDotenv } from "dotenv";
 import { existsSync } from "node:fs";
 import { fileURLToPath } from "node:url";
 import { dirname, resolve } from "node:path";
-import { harnessEnvPath } from "../init/secrets.js";
-import { logger } from "../logger.js";
 import {
-  DiscordFrontendAdapter,
-  StubFrontendAdapter,
+  harnessEnvPath,
+  logger,
+  normalizeProjectName,
+  readMirrorRecord,
   type FrontendAdapter,
-} from "../frontend/index.js";
-import { normalizeProjectName, readMirrorRecord } from "../mirror/index.js";
-import { Orchestrator } from "../orchestrator/index.js";
+} from "@devplusllc/harness-core";
+import { Orchestrator } from "@devplusllc/harness-runtime";
+import { DiscordFrontendAdapter } from "@devplusllc/harness-frontend-discord";
+import { StubFrontendAdapter } from "@devplusllc/harness-frontend-stub";
 
 const log = logger("cli.run");
 

@@ -11,8 +11,8 @@
  * Burns ~3 cheap haiku-tier calls. SKIPS without `claude`.
  */
 
-import { claudeIsAvailable } from "../src/claude/index.js";
-import { generateUatChecks } from "../src/uat/index.js";
+import { claudeIsAvailable } from "@devplusllc/harness-core";
+import { generateUatChecks } from "@devplusllc/harness-runtime";
 
 function header(line: string): void {
   console.log(`\n── ${line}`);

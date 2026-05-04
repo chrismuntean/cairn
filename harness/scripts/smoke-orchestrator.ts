@@ -23,15 +23,15 @@ import {
 } from "node:fs";
 import { tmpdir } from "node:os";
 import { join } from "node:path";
-import { writeInboxRow } from "../src/frontend/index.js";
-import { StubFrontendAdapter } from "../src/frontend/stub/index.js";
-import { claudeIsAvailable } from "../src/claude/index.js";
+import { writeInboxRow } from "@devplusllc/harness-core";
+import { StubFrontendAdapter } from "@devplusllc/harness-frontend-stub";
+import { claudeIsAvailable } from "@devplusllc/harness-core";
 import {
   ensureMirror,
   mirrorPath,
   mirrorRecordPath,
-} from "../src/mirror/index.js";
-import { Orchestrator } from "../src/orchestrator/index.js";
+} from "@devplusllc/harness-core";
+import { Orchestrator } from "@devplusllc/harness-runtime";
 
 const projectName = `smoke_orch_${Date.now()}`;
 let cleanupPaths: string[] = [];

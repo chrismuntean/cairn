@@ -33,15 +33,15 @@ import {
   ensureMirror,
   mirrorPath,
   mirrorRecordPath,
-} from "../src/mirror/index.js";
-import { Orchestrator } from "../src/orchestrator/index.js";
-import { StubFrontendAdapter } from "../src/frontend/stub/index.js";
+} from "@devplusllc/harness-core";
+import { Orchestrator } from "@devplusllc/harness-runtime";
+import { StubFrontendAdapter } from "@devplusllc/harness-frontend-stub";
 import type {
   DialogResponse,
   PostUpdate,
   RunPhase,
-} from "../src/orchestrator/index.js";
-import type { DialogSpec } from "../src/frontend/types.js";
+} from "@devplusllc/harness-runtime";
+import type { DialogSpec } from "@devplusllc/harness-core";
 
 const projectName = `smoke_ux_${Date.now()}`;
 const cleanupPaths: string[] = [];

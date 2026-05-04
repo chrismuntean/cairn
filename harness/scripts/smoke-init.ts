@@ -37,7 +37,7 @@ import {
   detectAvailableSensors,
   detectStackSignatures,
   runInit,
-} from "../src/init/index.js";
+} from "@devplusllc/harness-core";
 
 const cleanups: string[] = [];
 

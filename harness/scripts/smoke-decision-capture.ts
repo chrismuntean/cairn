@@ -43,7 +43,7 @@ import {
 import { tmpdir } from "node:os";
 import { join } from "node:path";
 import { parse as parseYaml } from "yaml";
-import { claudeIsAvailable } from "../src/claude/index.js";
+import { claudeIsAvailable } from "@devplusllc/harness-core";
 import {
   acceptDraft,
   allocateDecisionId,
@@ -52,9 +52,9 @@ import {
   runDecisionExtractor,
   writeDecisionDraft,
   type DecisionExtractorOutput,
-} from "../src/decision-capture/index.js";
-import { StubFrontendAdapter } from "../src/frontend/index.js";
-import { parseFrontmatter } from "../src/ground/frontmatter.js";
+} from "@devplusllc/harness-core";
+import { StubFrontendAdapter } from "@devplusllc/harness-frontend-stub";
+import { parseFrontmatter } from "@devplusllc/harness-core";
 
 const cleanups: string[] = [];
 
