@@ -1,6 +1,6 @@
 {
   "name": "cairn",
-  "owner": { "name": "Isaac Riehm" },
+  "owner": { "name": "Chris Muntean" },
   "metadata": { "description": "Cairn — ground state for AI coding agents" },
   "plugins": [
     {
